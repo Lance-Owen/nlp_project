@@ -1,0 +1,90 @@
+{
+    "bid":{
+            "中标公告编号": "notice_num",
+            "项目名称": "project_name",
+            "中标单位": "winning_bidder",
+            "项目负责人": "project_leader",
+            "中标金额": "amount"
+    },
+    "tender":{
+            "项目名称": "project_name",
+            "项目招标编号": "notice_num",
+            "预算": "budget",
+            "报名开始时间": "sign_up_stime",
+            "报名结束时间": "sign_up_etime",
+            "招标文件领取开始时间": "tender_document_stime",
+            "招标文件领取结束时间": "tender_document_etime",
+            "投标截止时间": "tender_etime",
+            "开标时间": "bid_opening_time",
+            "招标单位": "tenderee",
+            "招标单位地址": "tenderee_address",
+            "招标单位联系人": "tenderee_liaison",
+            "招标单位联系电话": "tenderee_pnumber",
+            "招标代理机构": "agency",
+            "招标代理机构地址": "agency_address",
+            "代理机构联系人": "agency_liaison",
+            "代理联系人电话": "agency_pnumber",
+            "招标文件获取网址": "tender_document_access",
+            "建设地点": "address",
+            "招标公告类型":"tender_announcement_type"
+    },
+
+    "contract":{
+        "项目名称": "project_name",
+        "项目编号": "notice_num",
+        "开工时间": "start_time",
+        "结束时间": "end_time",
+        "建筑面积": "build_area",
+        "建筑全长": "build_length",
+        "项目地址": "address",
+        "项目概况": "project_overview",
+        "金额": "amount",
+        "建设/采购公司": "procurement_company",
+        "建设/采购联系人": "procurement_contact",
+        "建设/采购联系方式": "procurement_pnumber",
+        "招标公司": "tenderee",
+        "招标联系人": "tenderee_liaison",
+        "招标联系方式": "tenderee_pnumber",
+        "面积单位": "area_unit",
+        "长度单位": "length_unit",
+        "金额单位": "amount_unit"
+    },
+
+    "test_other_tender_bid_result":{
+        "target": "final_other_tender_bid_result",
+        "task": "bid"
+    },
+    "test_other_tender_bid": {
+        "target": "final_other_tender_bid", 
+        "task": "tender"
+    },
+    "test_procurement_bid": {
+        "target": "final_procurement_bid", 
+        "task": "tender"
+    },
+    "test_procurement_bid_result": {
+        "target": "final_procurement_bid_result", 
+        "task": "bid"
+    },
+    "test_tender_bid": {
+        "target": "final_tender_bid", 
+        "task": "tender"
+    },
+    "test_tender_bid_result": {
+        "target": "final_tender_bid_result", 
+        "task": "bid"
+    },
+    "test_tender_trade_result": {
+        "target": "final_tender_trade_result",
+        "task":"contract"
+    },
+    "test_other_tender_trade_result": {
+        "target": "final_other_tender_trade_result",
+        "task": "contract"
+    },
+    "test_procurement_trade_result": {
+        "target": "final_procurement_trade_result",
+        "task": "contract"
+    }
+
+}
