@@ -12,7 +12,7 @@ test = False
 
 def d_parse_config():
     config = configparser.ConfigParser()
-    config.read(os.path.join(os.path.dirname(__file__), 'config.ini'),encoding='utf8')
+    config.read(os.path.join(os.path.dirname(__file__), 'config.ini'))
     return config
 
 def d_log_error(error):

@@ -38,7 +38,7 @@ from rel_model import create_relation_model, create_classification_layer, create
 
 def d_parse_config():
     config = configparser.ConfigParser()
-    config.read(os.path.join(os.path.dirname(__file__), 'config.ini'),encoding='utf8')
+    config.read(os.path.join(os.path.dirname(__file__), 'config.ini'))
     return config
 
 project_configs = d_parse_config()
