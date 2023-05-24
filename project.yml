@@ -10,7 +10,6 @@ vars:
   version: "0.0.1"
   # Set your GPU ID, -1 is CPU
   gpu_id: 0
-  gpu: 0,1
   # Vectors model for train-with-vectors
   vectors_model: "zh_core_web_lg"
   host: "127.0.0.1"
@@ -148,7 +147,7 @@ commands:
   - name: "train_rel_trf"
     help: "Train the rel trf model"
     script:
-      - "python -m spacy train configs/config_trf_rel.cfg --output training/${env.task}/ --paths.train corpus/train.spacy --paths.dev corpus/dev.spacy -c scripts/custom_functions.py  --gpu ${vars.gpu}"
+      - "python -m spacy train configs/config_trf_rel.cfg --output training/${env.task}/ --paths.train corpus/train.spacy --paths.dev corpus/dev.spacy -c scripts/custom_functions.py  --gpu_id ${vars.gpu_id}"
     deps:
       - "configs/config.cfg"
       - "corpus/train.spacy"
